@@ -1,29 +1,44 @@
 $(document).ready( function(){
 	$(".js-back").hide();
+
+//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+renderHighlightedRecipes(recipesArray);
+
+
 	$(".js-menu").click(function() {
 		$(".js-back").show();
 		$(".js-menu").hide();
-
-//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
-		renderHighlightedRecipes(recipesArray);
-
-
-  
-	
 	 });
-});
 
- function printNews(){
+});
+function printNews(){
 $( "#p-new" ).append("NUEVAS RECETAS");
  
 }		
 printNews();
+
+
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
+
 function renderHighlightedRecipes(recipesArray) {
+	for (i = 0; i < recipesArray.length; i++){
+
+		/*if (highlighted= true){
+			return title;
+			renderRecipe();
+		}else{
+			alert("noooooo");
+		}*/
+
+                
+
+
 	console.log('Recipes: ', recipesArray);
+
+}
 }
 
 /*
