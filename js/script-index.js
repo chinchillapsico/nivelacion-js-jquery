@@ -1,7 +1,17 @@
 $(document).ready( function(){
+	$(".js-back").hide();
+	$(".js-menu").click(function() {
+		$(".js-back").show();
+		$(".js-menu").hide();
+
+
+	});
+	
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	
+	
 
 });
 
@@ -41,5 +51,4 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
-
 
